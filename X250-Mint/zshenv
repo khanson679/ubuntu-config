@@ -1,0 +1,3 @@
+# load same .env file used with bash and X via .profile
+source "$HOME/.env"
+source "$HOME/.aliases"

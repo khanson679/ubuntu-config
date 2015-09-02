@@ -1,3 +1,7 @@
+# This zshrc contains shared configuration
+# Please source it from your actual .zshrc
+
+
 # Path to your oh-my-zsh installation.
 export ZSH=/home/kenneth/.oh-my-zsh
 
@@ -53,7 +57,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/home/kenneth/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+# export PATH="/home/kenneth/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -83,9 +87,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-#
-# manual additions
-#
-
-. ~/ubuntu-config/env_variables.sh
+source $HOME/ubuntu-config/shared/aliases
+source $HOME/ubuntu-config/shared/functions

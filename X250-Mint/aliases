@@ -1,0 +1,3 @@
+alias CE='java -cp /home/kenneth/apps/antlrworks-1.4.3.jar:/home/kenneth/apps/CorpusExtract.jar CorpusExtract'
+alias CS='java -cp /home/kenneth/apps/CS_2.003.04.jar csearch/CorpusSearch'
+alias lb='python2.7 /home/kenneth/Programming/lingbib-app/lingbib.py'
