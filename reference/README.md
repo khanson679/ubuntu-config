@@ -1,0 +1,1 @@
+This folder contains examples of files that should not be symlinked, but instead used as a reference when editing system config files.
