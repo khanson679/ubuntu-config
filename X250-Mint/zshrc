@@ -83,4 +83,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source $HOME/ubuntu-config/X250-Mint/functions
+source $HOME/.aliases
+source $HOME/.functions
