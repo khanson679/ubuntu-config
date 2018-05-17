@@ -3,5 +3,5 @@
 
 for file in $@; do
 	echo $file
-	ln -sf $file $HOME/.$(basename $file);
+	ln -s $file $HOME/.$(basename $file);
 done
