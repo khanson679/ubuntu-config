@@ -11,17 +11,19 @@ if [ -d "$HOME/Scripts" ]; then
     PATH="$HOME/Scripts:$PATH"
 fi
 
-# IME fix
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS="@im=fcitx"
-
 # TeXLive
-export PATH=$HOME/.local/texlive/2017/bin/x86_64-linux:$PATH
-export MANPATH=$HOME/.local/texlive/2017/texmf-dist/doc/man:$MANPATH
-export INFOPATH=$HOME/.local/texlive/2017/texmf-dist/doc/info:$INFOPATH
+export PATH="$HOME/.local/texlive/2019/bin/x86_64-linux:$PATH"
+export MANPATH="$HOME/.local/texlive/2019/texmf-dist/doc/man:$MANPATH"
+export INFOPATH="$HOME/.local/texlive/2019/texmf-dist/doc/info:$INFOPATH"
+
+# IME fix
+# No longer needed as of Kubuntu 18.10, if not earlier
+#export GTK_IM_MODULE="fcitx"
+#export QT_IM_MODULE="fcitx"
+#export XMODIFIERS="@im=fcitx"
 
 # Linuxbrew
+# No longer using
 #export PATH="$HOME/.linuxbrew/bin:$PATH"
 #export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 #export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
