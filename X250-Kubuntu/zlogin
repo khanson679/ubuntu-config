@@ -1,2 +1,2 @@
-# load same .env file used with bash and X via .profile
+# load same environment variables as bash and X
 source "$HOME/.env"
