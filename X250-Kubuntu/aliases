@@ -5,11 +5,17 @@ alias la='ls -A'
 alias ll='ls -lh'
 alias lla='ls -lhA'
 alias ls='ls --color=auto'
+
+# apt
 alias sai='sudo apt install'
-alias sainr='sudo apt install --no-recommends'
+alias sainr='sudo apt install --no-install-recommends'
 alias sar='sudo apt remove'
 alias sau='sudo apt upgrade'
 alias sauu='sudo apt update && sudo apt upgrade'
+
+# program shortcuts
+alias py3='python3'
+alias ipy3='ipython3'
 
 # Linux admin (pipe from pgrep)
 alias show-shared-libs='xargs -I {} cat /proc/{}/maps'
@@ -17,11 +23,8 @@ alias show-shared-libs='xargs -I {} cat /proc/{}/maps'
 # show all installed packages
 alias list-installed='apt list --installed'
 
-# convert any ODF file (ODT, ODS, etc.) to PDF
-alias odf2pdf='libreoffice --headless --convert-to pdf'
-
-# quick fix to get GPG to use pinentry-curses instead of pinentry-qt
-alias pass='DISPLAY="" pass'
-
 # show recent installations via APT
 alias recently-installed='cat /var/log/apt/history.log | grep "\ install\ "'
+
+# convert any ODF file (ODT, ODS, etc.) to PDF
+alias odf2pdf='libreoffice --headless --convert-to pdf'
