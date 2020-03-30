@@ -1,2 +1,5 @@
+# load /etc/profile in compatibility mode
+emulate sh -c 'source /etc/profile'
+
 # load same environment variables as bash and X
 source "$HOME/.env"
