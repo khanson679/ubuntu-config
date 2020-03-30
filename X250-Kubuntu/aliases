@@ -26,7 +26,7 @@ alias show-shared-libs='xargs -I {} cat /proc/{}/maps'
 alias list-installed='apt list --installed'
 
 # show recent installations via APT
-alias recently-installed=grep " install " /var/log/dpkg.log
+alias recently-installed='grep " install " /var/log/dpkg.log'
 
 # convert any ODF file to PDF
 alias odf2pdf='libreoffice --headless --convert-to pdf'
