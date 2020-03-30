@@ -2,20 +2,27 @@
 # Environment variables to be set by X, bash, or zsh on login
 #
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+# helper functions
+# if expansion of path variable does not include entry, prepend it
 
-if [ -d "$HOME/.local/bin" ]; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
+pathprepend () {
+    [[ ":${PATH}:" != *":$1:"* ]] && export PATH="$1:${PATH}"
+}
 
-if [ -d "$HOME/Scripts" ]; then
-    PATH="$HOME/Scripts:$PATH"
-fi
+manpathprepend () {
+    [[ ":${MANPATH}:" != *":$1:"* ]] && export PATH="$1:${PATH}"
+}
+
+infopathprepend () {
+    [[ ":${INFOPATH}:" != *":$1:"* ]] && export PATH="$1:${PATH}"
+}
+
+
+# user executables
+pathprepend $HOME/.local/bin
+pathprepend $HOME/Scripts
 
 # TeXLive
-export PATH="$HOME/.local/texlive/2019/bin/x86_64-linux:$PATH"
-export MANPATH="$HOME/.local/texlive/2019/texmf-dist/doc/man:$MANPATH"
-export INFOPATH="$HOME/.local/texlive/2019/texmf-dist/doc/info:$INFOPATH"
+pathprepend $HOME/.local/texlive/2019/bin/x86_64-linux
+manpathprepend $HOME/.local/texlive/2019/texmf-dist/doc/man
+infopathprepend $HOME/.local/texlive/2019/texmf-dist/doc/info
