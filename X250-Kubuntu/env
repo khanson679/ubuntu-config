@@ -10,11 +10,11 @@ pathprepend () {
 }
 
 manpathprepend () {
-    [[ ":${MANPATH}:" != *":$1:"* ]] && export PATH="$1:${PATH}"
+    [[ ":${MANPATH}:" != *":$1:"* ]] && export MANPATH="$1:${MANPATH}"
 }
 
 infopathprepend () {
-    [[ ":${INFOPATH}:" != *":$1:"* ]] && export PATH="$1:${PATH}"
+    [[ ":${INFOPATH}:" != *":$1:"* ]] && export INFOPATH="$1:${INFOPATH}"
 }
 
 
