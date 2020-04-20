@@ -23,6 +23,6 @@ pathprepend $HOME/.local/bin
 pathprepend $HOME/Scripts
 
 # TeXLive
-pathprepend $HOME/.local/texlive/2019/bin/x86_64-linux
-manpathprepend $HOME/.local/texlive/2019/texmf-dist/doc/man
-infopathprepend $HOME/.local/texlive/2019/texmf-dist/doc/info
+#pathprepend $HOME/.local/texlive/2019/bin/x86_64-linux
+#manpathprepend $HOME/.local/texlive/2019/texmf-dist/doc/man
+#infopathprepend $HOME/.local/texlive/2019/texmf-dist/doc/info
