@@ -22,6 +22,11 @@ infopathprepend () {
 pathprepend $HOME/.local/bin
 pathprepend $HOME/Scripts
 
+# IME fix
+export GTK_IM_MODULE="fcitx"
+export QT_IM_MODULE="fcitx"
+export XMODIFIERS="@im=fcitx"
+
 # TeXLive
 #pathprepend $HOME/.local/texlive/2019/bin/x86_64-linux
 #manpathprepend $HOME/.local/texlive/2019/texmf-dist/doc/man
