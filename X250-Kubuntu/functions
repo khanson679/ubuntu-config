@@ -1,5 +1,0 @@
-# shared functions
-
-apt-install-from-file () {
-    sudo apt-get install $(grep -vE "^\s*#" $1 | tr "\n" " ")
-}
