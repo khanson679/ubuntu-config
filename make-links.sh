@@ -1,5 +1,5 @@
 #!/bin/bash
-# make links to all given files in home folder, adding a preceding dot
+# make links to all dotfiles in home folder
 set -x
 for file in dotfiles/*; do
     original=$(realpath $file)
