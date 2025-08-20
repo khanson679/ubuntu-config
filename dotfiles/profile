@@ -24,3 +24,5 @@ if [ "$HOST" = "T470-Kubuntu" ]; then
     # fix phantom middle click
     xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
 fi
+
+echo "successfully sourced .profile" > ~/CONFIRMATION

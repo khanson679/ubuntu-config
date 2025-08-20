@@ -27,6 +27,11 @@ alias sar='sudo apt remove'
 alias sau='sudo apt upgrade'
 alias sauu='sudo apt update && sudo apt upgrade'
 
+# misc shortcuts
+alias texmfdist='cd /usr/local/texlive/2025/texmf-dist'
+alias texmfhome='cd $HOME/.texmf'
+alias bibdir='cd $HOME/.texmf/bibtex/bib'
+
 # show shared libs used by process (pipe from pgrep)
 alias show-shared-libs='xargs -I {} cat /proc/{}/maps'
 

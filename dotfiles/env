@@ -17,8 +17,12 @@ infopathprepend () {
     [[ ":${INFOPATH}:" != *":$1:"* ]] && export INFOPATH="$1:${INFOPATH}"
 }
 
+# Add TeXLive to PATH
+#pathprepend /usr/local/texlive/2023/bin/x86_64-linux
+#manpathprepend /usr/local/texlive/2023/texmf-dist/doc/man
+#infopathprepend /usr/local/texlive/2023/texmf-dist/doc/info
 
-# user executables
+# Add user executables to PATH
 pathprepend $HOME/.local/bin
 pathprepend $HOME/Scripts
 
@@ -26,8 +30,3 @@ pathprepend $HOME/Scripts
 export GTK_IM_MODULE="fcitx"
 export QT_IM_MODULE="fcitx"
 export XMODIFIERS="@im=fcitx"
-
-# TeXLive
-#pathprepend $HOME/.local/texlive/2019/bin/x86_64-linux
-#manpathprepend $HOME/.local/texlive/2019/texmf-dist/doc/man
-#infopathprepend $HOME/.local/texlive/2019/texmf-dist/doc/info
